@@ -1,0 +1,76 @@
+:root {
+  --primary: #33B667;
+  --secondary: #DDD;
+  --gray-300: #D1D1D1;
+
+  --sm: 0.75rem;
+  --md: 0.9375rem;
+  --lg: 1.375rem;
+  --xl: 1.625rem;
+
+  --media-sm: 600px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+
+  cursor: pointer;
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-sm {
+  font-size: var(--sm);
+}
+
+.text-md {
+  font-size: var(--md);
+}
+
+.text-lg {
+  font-size: var(--lg);
+}
+
+.text-xl {
+  font-size: var(--xl);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:disabled {
+  background-color: var(--secondary);
+  cursor: default;
+}
+
+.bold {
+  font-weight: bold;
+}
