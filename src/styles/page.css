@@ -1,0 +1,90 @@
+.container {
+  height: 100%;
+  padding: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.container > p {
+  font-weight: 400;
+  text-align: center;
+}
+
+.content {
+  border: 1px solid var(--gray-300);
+  border-radius: 10px;
+
+  padding: 1.5rem;
+}
+
+.content-header {
+  display: flex;
+  gap: 3.125rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.content-header .rounds {
+  text-align: center;
+}
+
+.rounds span {
+  font-size: var(--sm);
+}
+
+.content-body {
+  gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.result > i {
+  color: var(--secondary);
+}
+
+.game {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  justify-content: center;
+  padding: 1rem 0;
+
+  border-bottom: 1px solid var(--secondary);
+}
+
+.game:last-child {
+  border-bottom: none;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: var(--sm);
+}
+
+@media (max-width: 600px) {
+  .game {
+    gap: 1rem;
+  }
+  .content-header{
+    margin-bottom: 2rem;
+    gap: 1.25rem;
+  }
+  .content {
+    padding: 0.85rem;
+  }
+}
