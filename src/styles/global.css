@@ -66,6 +66,11 @@ button {
   color: #fff;
 }
 
+.btn-primary:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 .btn-primary:disabled {
   background-color: var(--secondary);
   cursor: default;
